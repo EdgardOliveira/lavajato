@@ -18,14 +18,13 @@ Autenticação simples (consulta usuário e senha no banco de dados)
 5. **Paciência com o Netbeans (gzuis)**
 
 ## Diagrama de Caso de Uso
-![Diagrama Caso de Uso](https://github.com/EdgardOliveira/lavajato/blob/master/lavajato/imagens/login.png)
+![Diagrama Caso de Uso](https://github.com/EdgardOliveira/lavajato/tree/master/imagens/UseCase Diagram - LavaJato.png)
 
 ## Diagrama de Classes
-![Diagrama Caso de Classes](https://github.com/EdgardOliveira/lavajato/blob/master/lavajato/imagens/login.png)
+![Diagrama Caso de Classes](https://github.com/EdgardOliveira/lavajato/tree/master/imagens/Class Diagram - LavaJato.png)
 
 ## Diagrama de Atividade
-![Diagrama de Atividade](https://github.com/EdgardOliveira/lavajato/blob/master/lavajato/imagens/login.png)
+![Diagrama de Atividade](https://github.com/EdgardOliveira/lavajato/tree/master/imagens/Activity Diagram - LavaJato Vender.png)
 
 ## Diagrama de Estado
-![Diagrama de Estado](https://github.com/EdgardOliveira/lavajato/blob/master/lavajato/imagens/login.png)
-
+![Diagrama de Estado](https://github.com/EdgardOliveira/lavajato/tree/master/imagens/Statemachine Diagram - LavaJato.png)
