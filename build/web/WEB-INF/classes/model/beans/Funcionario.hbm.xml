@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2020 11:37:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Funcionario" table="funcionario" catalog="lavajato" optimistic-lock="version">
+        <id name="funId" type="java.lang.Integer">
+            <column name="funId" />
+            <generator class="identity" />
+        </id>
+        <property name="funNome" type="string">
+            <column name="funNome" length="60" not-null="true" />
+        </property>
+        <property name="funUsuario" type="string">
+            <column name="funUsuario" length="30" not-null="true" unique="true" />
+        </property>
+        <property name="funSenha" type="string">
+            <column name="funSenha" length="30" not-null="true" />
+        </property>
+        <set name="vendas" table="venda" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="venFunId" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Venda" />
+        </set>
+    </class>
+</hibernate-mapping>

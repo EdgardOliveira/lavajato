@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2020 11:37:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Itemvenda" table="itemvenda" catalog="lavajato" optimistic-lock="version">
+        <id name="itvId" type="java.lang.Integer">
+            <column name="itvId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="prodserv" class="model.beans.Prodserv" fetch="select">
+            <column name="itvProId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="venda" class="model.beans.Venda" fetch="select">
+            <column name="itvVenId" not-null="true" />
+        </many-to-one>
+        <property name="itvQuant" type="int">
+            <column name="itvQuant" not-null="true" />
+        </property>
+        <property name="itvSubtotal" type="double">
+            <column name="itvSubtotal" precision="22" scale="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

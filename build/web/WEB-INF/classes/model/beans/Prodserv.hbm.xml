@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2020 11:37:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Prodserv" table="prodserv" catalog="lavajato" optimistic-lock="version">
+        <id name="proId" type="java.lang.Integer">
+            <column name="proId" />
+            <generator class="identity" />
+        </id>
+        <property name="proDescricao" type="string">
+            <column name="proDescricao" length="50" not-null="true" />
+        </property>
+        <property name="proTipo" type="string">
+            <column name="proTipo" length="2" not-null="true" />
+        </property>
+        <property name="proPrecoCusto" type="double">
+            <column name="proPrecoCusto" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="proPrecoVenda" type="double">
+            <column name="proPrecoVenda" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="proQuantEstoque" type="int">
+            <column name="proQuantEstoque" not-null="true" />
+        </property>
+        <set name="itemvendas" table="itemvenda" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="itvProId" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Itemvenda" />
+        </set>
+    </class>
+</hibernate-mapping>

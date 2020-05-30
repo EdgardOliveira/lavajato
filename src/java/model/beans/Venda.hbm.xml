@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2020 11:37:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Venda" table="venda" catalog="lavajato" optimistic-lock="version">
+        <id name="venId" type="java.lang.Integer">
+            <column name="venId" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cliente" class="model.beans.Cliente" fetch="select">
+            <column name="venCliId" not-null="true" />
+        </many-to-one>
+        <many-to-one name="funcionario" class="model.beans.Funcionario" fetch="select">
+            <column name="venFunId" not-null="true" />
+        </many-to-one>
+        <property name="venDataEntrada" type="date">
+            <column name="venDataEntrada" length="10" not-null="true" />
+        </property>
+        <property name="venHoraEntrada" type="time">
+            <column name="venHoraEntrada" length="8" not-null="true" />
+        </property>
+        <property name="venDataSaida" type="date">
+            <column name="venDataSaida" length="10" />
+        </property>
+        <property name="venHoraSaida" type="time">
+            <column name="venHoraSaida" length="8" />
+        </property>
+        <property name="venTipo" type="string">
+            <column name="venTipo" length="2" not-null="true" />
+        </property>
+        <property name="venTotal" type="double">
+            <column name="venTotal" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="venFormaPagamento" type="string">
+            <column name="venFormaPagamento" length="14" />
+        </property>
+        <property name="venStatus" type="string">
+            <column name="venStatus" length="18" />
+        </property>
+        <set name="itemvendas" table="itemvenda" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="itvVenId" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Itemvenda" />
+        </set>
+    </class>
+</hibernate-mapping>

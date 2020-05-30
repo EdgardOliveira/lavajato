@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2020 11:37:52 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.beans.Cliente" table="cliente" catalog="lavajato" optimistic-lock="version">
+        <id name="cliId" type="java.lang.Integer">
+            <column name="cliId" />
+            <generator class="identity" />
+        </id>
+        <property name="cliNome" type="string">
+            <column name="cliNome" length="60" not-null="true" />
+        </property>
+        <property name="cliCpf" type="string">
+            <column name="cliCpf" length="11" not-null="true" unique="true" />
+        </property>
+        <property name="cliCelular" type="string">
+            <column name="cliCelular" length="11" not-null="true" />
+        </property>
+        <property name="cliPlaca" type="string">
+            <column name="cliPlaca" length="7" not-null="true" unique="true" />
+        </property>
+        <property name="cliMarca" type="string">
+            <column name="cliMarca" length="20" not-null="true" />
+        </property>
+        <property name="cliModelo" type="string">
+            <column name="cliModelo" length="30" not-null="true" />
+        </property>
+        <property name="cliCor" type="string">
+            <column name="cliCor" length="20" not-null="true" />
+        </property>
+        <set name="vendas" table="venda" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="venCliId" not-null="true" />
+            </key>
+            <one-to-many class="model.beans.Venda" />
+        </set>
+    </class>
+</hibernate-mapping>
