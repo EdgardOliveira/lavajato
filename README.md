@@ -18,7 +18,7 @@ Autenticação simples (consulta usuário e senha no banco de dados)
 5. **Paciência com o Netbeans (gzuis)**
 
 ## Diagrama de Caso de Uso
-![Diagrama Caso de Uso](https://github.com/EdgardOliveira/lavajato/blob/master/imagens/UseCase.png)
+![Diagrama Caso de Uso](https://github.com/EdgardOliveira/lavajato/blob/master/imagens/UseCaseDiagram.png)
 
 ## Diagrama de Classes
 ![Diagrama Caso de Classes](https://github.com/EdgardOliveira/lavajato/blob/master/imagens/ClassDiagram.png)
