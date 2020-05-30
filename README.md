@@ -1,11 +1,11 @@
 # LAVA JATO - SISTEMA DE GERENCIAMENTO WEB
 
 ## Utiliza as seguintes tecnologias:
-1. Banco de Dados: MariaDB;
-2. Linguagem de Programação: Java;
-3. Framework Hibernate;
-3. JSP, Servlets;
-4. Framework Bootstrap;
+1. Banco de Dados: MariaDB
+2. Linguagem de Programação: Java
+3. Framework Hibernate
+3. JSP, Servlets
+4. Framework Bootstrap
 5. Template Bootstrap: Atlantis
 
 ## Requisitos necessários: 
@@ -60,10 +60,10 @@
 <img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/listarVendas.png" alt="Inicial" style="width:500px;height:600px;">
 
 ### Cadastrar
-<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/cadastrarVendas.png" alt="Inicial" style="width:500px;height:600px;">
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/iniciarPrevenda.png" alt="Inicial" style="width:500px;height:600px;">
 
-### Alterar
-<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/alterarVendas.png" alt="Inicial" style="width:500px;height:600px;">
+### Finalizar Venda
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/finalizarVenda.png" alt="Inicial" style="width:500px;height:600px;">
 
 
 ## Diagrama de Caso de Uso
