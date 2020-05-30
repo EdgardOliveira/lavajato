@@ -1,6 +1,4 @@
 # LAVA JATO - SISTEMA DE GERENCIAMENTO WEB
-![Tela Login](https://github.com/EdgardOliveira/lavajato/blob/master/lavajato/imagens/login.png)
-Autenticação simples (consulta usuário e senha no banco de dados)
 
 ## Utiliza as seguintes tecnologias:
 1. Banco de Dados: MariaDB;
@@ -16,6 +14,57 @@ Autenticação simples (consulta usuário e senha no banco de dados)
 3. Netbeans v8.2
 4. Driver Conector MySQL
 5. **Paciência com o Netbeans (gzuis)**
+
+
+## Tela de Login
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/login.png" alt="Inicial" style="width:500px;height:600px;">
+
+## Tela Inicial
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/inicial.png" alt="Inicial" style="width:500px;height:600px;">
+
+
+## Tela de Gerenciamento de Clientes
+### Listar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/listarClientes.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Cadastrar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/cadastrarClientes.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Alterar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/alterarClientes.png" alt="Inicial" style="width:500px;height:600px;">
+
+
+## Tela de Gerenciamento de Funcionários
+### Listar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/listarFuncionarios.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Cadastrar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/cadastrarFuncionarios.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Alterar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/alterarFuncionarios.png" alt="Inicial" style="width:500px;height:600px;">
+
+
+## Tela de Gerenciamento de Produtos e Serviços
+### Listar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/listarProdutosServicos.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Cadastrar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/cadastrarProdutosServicos.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Alterar
+
+
+## Tela de Gerenciamento de Vendas
+### Listar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/listarVendas.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Cadastrar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/cadastrarVendas.png" alt="Inicial" style="width:500px;height:600px;">
+
+### Alterar
+<img src="https://github.com/EdgardOliveira/lavajato/blob/master/imagens/alterarVendas.png" alt="Inicial" style="width:500px;height:600px;">
+
 
 ## Diagrama de Caso de Uso
 ![Diagrama Caso de Uso](https://github.com/EdgardOliveira/lavajato/blob/master/imagens/UseCaseDiagram.png)
